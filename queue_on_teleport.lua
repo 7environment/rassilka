@@ -2,7 +2,6 @@ local TeleportService = game:GetService("TeleportService")
 local TextChatService = game:GetService("TextChatService")
 local channel = TextChatService.TextChannels["RBXGeneral"]
 channel:SendAsync("Привет, хорошей игры, пока")
-print(game:HttpGet("https://raw.githubusercontent.com/7environment/rassilka/refs/heads/main/queue_on_teleport.lua", false))
 task.wait(10)
 queue_on_teleport(game:HttpGet("https://raw.githubusercontent.com/7environment/rassilka/refs/heads/main/queue_on_teleport.lua", false))
-game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId)
+game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
