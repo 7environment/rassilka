@@ -5,8 +5,8 @@ local blebleble = {"Вы сахарок без айсвинга? возьмит�
 for j = 1, 2, 1 do
     for i,v in pairs(blebleble) do
         channel:SendAsync(v)
-        task.wait(3)
+        task.wait(5)
     end
 end
-queue_on_teleport(loadsrting(game:HttpGet("https://raw.githubusercontent.com/7environment/rassilka/refs/heads/main/queue_on_teleport.lua", true)))
+queue_on_teleport(game:HttpGet("https://raw.githubusercontent.com/7environment/rassilka/refs/heads/main/queue_on_teleport.lua", true))
 game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
